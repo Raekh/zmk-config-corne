@@ -28,10 +28,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp LS(PLUS)  &kp LBKT      &kp LS(RBKT)  &kp LS(LPAR)    &kp LS(AMPS)    &kp EQUAL     &kp LS(RPAR)    &kp LS(RBRC)  &kp LBRC  &kp LS(STAR)  &trans
-&trans  &kp N1        &kp N2        &kp N3        &lt 2 NUMBER_4  &kp N5          &kp N6        &lt 2 NUMBER_7  &kp N8        &kp N9    &kp N0        &trans
-&trans  &kp LS(PIPE)  &kp LS(DLLR)  &trans        &trans          &trans          &kp LS(EXCL)  &kp BSLH        &kp MINUS     &kp FSLH  &kp LS(AT)    &trans
-                                    &trans        &trans          &trans          &kp ENTER     &kp SPACE       &kp ESCAPE
+&trans  &kp LS(PLUS)  &kp LBKT      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LS(AMPS)    &kp EQUAL     &kp LS(RPAR)    &kp LS(RBRC)  &kp RIGHT_BRACKET  &kp LS(STAR)  &trans
+&trans  &kp N1        &kp N2        &kp N3          &lt 2 NUMBER_4        &kp N5          &kp N6        &lt 2 NUMBER_7  &kp N8        &kp N9             &kp N0        &trans
+&trans  &kp LS(PIPE)  &kp LS(DLLR)  &trans          &trans                &trans          &kp LS(EXCL)  &kp BSLH        &kp MINUS     &kp FSLH           &kp LS(AT)    &trans
+                                    &trans          &trans                &trans          &kp ENTER     &kp SPACE       &kp ESCAPE
             >;
         };
 
