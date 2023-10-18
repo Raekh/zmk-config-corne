@@ -9,7 +9,7 @@
 
 &mt {
     tapping-term-ms = <350>;
-    require-prior-idle-ms = <125>;
+    require-prior-idle-ms = <250>;
     retro-tap;
 };
 
