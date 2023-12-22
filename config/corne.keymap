@@ -9,13 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <125>;
+    tapping-term-ms = <165>;
     require-prior-idle-ms = <125>;
     quick-tap-ms = <125>;
     flavor = "tap-preferred";
 };
 
-&key_repeat {
+&lt {
+    quick-tap-ms = <125>;
 };
 
 / {
