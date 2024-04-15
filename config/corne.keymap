@@ -15,9 +15,7 @@
     flavor = "tap-preferred";
 };
 
-&lt {
-    quick-tap-ms = <125>;
-};
+&lt { quick-tap-ms = <150>; };
 
 / {
     keymap {
