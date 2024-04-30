@@ -15,7 +15,7 @@
     flavor = "tap-preferred";
 };
 
-&lt { quick-tap-ms = <150>; };
+&lt { quick-tap-ms = <175>; };
 
 / {
     keymap {
@@ -56,10 +56,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F1    &kp F2      &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
-&trans  &kp HOME  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
-&trans  &kp END   &kp DEL     &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN          &kp INSERT  &kp F12  &trans
-                              &trans             &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
+&trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
+&trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
+&trans  &kp END   &kp CAPSLOCK  &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN          &kp INSERT  &kp F12  &trans
+                                &trans             &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
             >;
         };
 
