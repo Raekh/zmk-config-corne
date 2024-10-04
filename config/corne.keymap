@@ -29,10 +29,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y              &kp F        &kp G              &kp C            &kp R                &kp L            &trans
-&trans  &mt LEFT_WIN A  &mt LEFT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_SHIFT U  &kp I              &kp D        &mt RIGHT_SHIFT H  &mt RIGHT_ALT T  &mt RIGHT_CONTROL N  &mt RIGHT_WIN S  &trans
-&trans  &kp SQT         &kp Q               &kp J           &kp K             &kp X              &kp B        &kp M              &kp W            &kp V                &kp Z            &trans
-                                            &kp TAB         &kp DELETE        &lt 1 BACKSPACE    &lt 3 SPACE  &kp ENTER          &kp ESCAPE
+&trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y         &kp F    &kp G              &kp C            &kp R                &kp L            &trans
+&trans  &mt LEFT_WIN A  &mt LEFT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_SHIFT U  &kp I         &kp D    &mt RIGHT_SHIFT H  &mt RIGHT_ALT T  &mt RIGHT_CONTROL N  &mt RIGHT_WIN S  &trans
+&trans  &kp SQT         &kp Q               &kp J           &kp K             &kp X         &kp B    &kp M              &kp W            &kp V                &kp Z            &trans
+                                            &kp TAB         &lt 1 BACKSPACE   &kp DELETE    &kp RET  &lt 3 SPACE        &kp ESCAPE
             >;
         };
 
@@ -41,11 +41,11 @@
 &trans  &kp LS(PLUS)  &kp LBKT      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LS(AMPS)    &kp EQUAL     &kp LS(RPAR)    &kp LS(RBRC)  &kp RIGHT_BRACKET  &kp LS(STAR)  &trans
 &trans  &kp N1        &kp N2        &kp N3          &lt 2 NUMBER_4        &kp N5          &kp N6        &lt 2 NUMBER_7  &kp N8        &kp N9             &kp N0        &trans
 &trans  &kp LS(PIPE)  &kp LS(DLLR)  &trans          &trans                &trans          &kp LS(EXCL)  &kp BSLH        &kp MINUS     &kp FSLH           &kp LS(AT)    &trans
-                                    &trans          &trans                &trans          &kp SPACE     &kp ENTER       &kp ESCAPE
+                                    &trans          &trans                &trans          &kp ENTER     &kp SPACE       &kp ESCAPE
             >;
         };
 
-        Symbols_2 {
+        layer_2 {
             bindings = <
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
@@ -54,16 +54,16 @@
             >;
         };
 
-        Utils {
+        layer_3 {
             bindings = <
 &trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
 &trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
 &trans  &kp END   &kp CAPSLOCK  &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN          &kp INSERT  &kp F12  &trans
-                                &trans             &trans           &lt 4 BACKSPACE         &trans     &trans      &trans
+                                &trans             &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
             >;
         };
 
-        Profiles {
+        layer_4 {
             bindings = <
 &trans  &sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bt BT_CLR  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &trans
