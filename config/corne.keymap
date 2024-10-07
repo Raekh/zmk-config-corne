@@ -18,6 +18,29 @@
 &lt { quick-tap-ms = <175>; };
 
 / {
+    macros {
+        u_cedilla: unicode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp NUMBER_7 &kp RETURN>;
+            label = "UNICODE";
+        };
+
+        u_e_acute: unicode_e_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp N9 &kp RETURN>;
+            label = "UNICODE_E_ACUTE";
+        };
+
+        u_e_grave: unicode_e_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp N8 &kp RETURN>;
+            label = "UNICODE_E_GRAVE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -29,10 +52,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y         &kp F    &kp G              &kp C            &kp R                &kp L            &trans
-&trans  &mt LEFT_WIN A  &mt LEFT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_SHIFT U  &kp I         &kp D    &mt RIGHT_SHIFT H  &mt RIGHT_ALT T  &mt RIGHT_CONTROL N  &mt RIGHT_WIN S  &trans
-&trans  &kp SQT         &kp Q               &kp J           &kp K             &kp X         &kp B    &kp M              &kp W            &kp V                &kp Z            &trans
-                                            &kp TAB         &lt 1 BACKSPACE   &kp DELETE    &kp RET  &lt 3 SPACE        &kp ESCAPE
+&trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y           &kp F    &kp G              &kp C            &kp R                &kp L            &trans
+&trans  &mt LEFT_WIN A  &mt LEFT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_SHIFT U  &kp I           &kp D    &mt RIGHT_SHIFT H  &mt RIGHT_ALT T  &mt RIGHT_CONTROL N  &mt RIGHT_WIN S  &trans
+&trans  &kp SQT         &kp Q               &kp J           &kp K             &kp X           &kp B    &kp M              &kp W            &kp V                &kp Z            &trans
+                                            &kp TAB         &lt 1 BACKSPACE   &lt 2 DELETE    &kp RET  &lt 3 SPACE        &kp ESCAPE
             >;
         };
 
@@ -69,6 +92,15 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &trans
 &trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans  &trans  &trans      &trans
                                     &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans      &trans  &trans    &trans  &trans  &u_cedilla  &trans  &trans  &trans
+&trans  &trans  &trans  &u_e_acute  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &u_e_grave  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
+                        &trans      &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
