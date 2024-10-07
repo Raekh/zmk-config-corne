@@ -24,6 +24,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp NUMBER_7 &kp RETURN>;
             label = "UNICODE";
+            wait-ms = <50>;
         };
 
         u_e_acute: unicode_e_acute {
@@ -31,6 +32,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N9 &kp RETURN>;
             label = "UNICODE_E_ACUTE";
+            wait-ms = <50>;
         };
 
         u_e_grave: unicode_e_grave {
@@ -38,6 +40,71 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N8 &kp RETURN>;
             label = "UNICODE_E_GRAVE";
+            wait-ms = <50>;
+        };
+
+        u_e_circum: u_e_circum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp A &kp RETURN>;
+            label = "U_E_CIRCUM";
+            wait-ms = <50>;
+        };
+
+        u_e_trema: u_e_trema {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp B &kp RETURN>;
+            label = "U_E_TREMA";
+            wait-ms = <50>;
+        };
+
+        u_o_circum: u_o_circum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp F &kp N4 &kp RETURN>;
+            label = "U_O_CIRCUM";
+            wait-ms = <50>;
+        };
+
+        u_i_circum: u_i_circum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp E &kp RETURN>;
+            label = "U_I_CIRCUM";
+            wait-ms = <50>;
+        };
+
+        u_i_trema: u_i_trema {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp F &kp RETURN>;
+            label = "U_I_TREMA";
+            wait-ms = <50>;
+        };
+
+        u_a_grave: u_a_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp E &kp N0 &kp RETURN>;
+            label = "U_A_GRAVE";
+            wait-ms = <50>;
+        };
+
+        u_u_grave: u_u_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp F &kp N9 &kp RETURN>;
+            label = "U_U_GRAVE";
+            wait-ms = <50>;
+        };
+
+        u_u_circum: u_u_circum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RS(U)) &kp F &kp B &kp RETURN>;
+            label = "U_U_CIRCUM";
+            wait-ms = <50>;
         };
     };
 
@@ -68,7 +135,7 @@
             >;
         };
 
-        layer_2 {
+        Symbols_Alt {
             bindings = <
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
@@ -77,7 +144,7 @@
             >;
         };
 
-        layer_3 {
+        Media {
             bindings = <
 &trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
 &trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
@@ -86,7 +153,7 @@
             >;
         };
 
-        layer_4 {
+        Bluetooth {
             bindings = <
 &trans  &sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bt BT_CLR  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &trans
@@ -95,12 +162,12 @@
             >;
         };
 
-        layer_5 {
+        Unicode_Linux {
             bindings = <
-&trans  &trans  &trans  &trans      &trans  &trans    &trans  &trans  &u_cedilla  &trans  &trans  &trans
-&trans  &trans  &trans  &u_e_acute  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &u_e_grave  &trans  &trans    &trans  &trans  &trans      &trans  &trans  &trans
-                        &trans      &trans  &trans    &trans  &trans  &trans
+&trans  &trans      &trans       &u_e_circum  &trans       &trans         &trans  &trans  &u_cedilla  &trans  &trans  &trans
+&trans  &u_a_grave  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans      &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans  &trans      &trans  &trans  &trans
+                                 &trans       &trans       &trans         &trans  &trans  &trans
             >;
         };
     };
