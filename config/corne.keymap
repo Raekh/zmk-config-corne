@@ -125,7 +125,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            display-name = "Base";
             bindings = <
 &trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y           &kp F        &kp G              &kp C            &kp R                &kp L            &trans
 &trans  &mt LEFT_WIN A  &mt LEFT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_SHIFT U  &kp I           &kp D        &mt RIGHT_SHIFT H  &mt RIGHT_ALT T  &mt RIGHT_CONTROL N  &mt RIGHT_WIN S  &trans
@@ -135,6 +135,7 @@
         };
 
         Symbols {
+            display-name = "Symbols";
             bindings = <
 &trans  &kp LS(PLUS)  &kp LBKT      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LS(AMPS)    &kp EQUAL     &kp LS(RPAR)    &kp LS(RBRC)  &kp RIGHT_BRACKET  &kp LS(STAR)  &trans
 &trans  &kp N1        &kp N2        &kp N3          &lt 2 NUMBER_4        &kp N5          &kp N6        &lt 2 NUMBER_7  &kp N8        &kp N9             &kp N0        &trans
@@ -144,6 +145,7 @@
         };
 
         Symbols_Alt {
+            display-name = "Symbols Alt.";
             bindings = <
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
@@ -153,6 +155,7 @@
         };
 
         Media {
+            display-name = "Media";
             bindings = <
 &trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
 &trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
@@ -162,6 +165,7 @@
         };
 
         Bluetooth {
+            display-name = "Bluetooth";
             bindings = <
 &trans  &sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bt BT_CLR  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &trans
@@ -171,6 +175,7 @@
         };
 
         Unicode_Linux {
+            display-name = "Unicode (L)";
             bindings = <
 &trans  &trans      &trans       &u_e_circum  &trans       &trans         &trans  &trans  &u_cedilla  &trans  &trans  &trans
 &trans  &u_a_grave  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &trans  &trans      &trans  &trans  &trans
