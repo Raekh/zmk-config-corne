@@ -24,7 +24,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp NUMBER_7 &kp RETURN>;
             label = "UNICODE";
-            wait-ms = <50>;
         };
 
         u_e_acute: unicode_e_acute {
@@ -32,7 +31,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N9 &kp RETURN>;
             label = "UNICODE_E_ACUTE";
-            wait-ms = <50>;
         };
 
         u_e_grave: unicode_e_grave {
@@ -40,7 +38,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N8 &kp RETURN>;
             label = "UNICODE_E_GRAVE";
-            wait-ms = <50>;
         };
 
         u_e_circum: u_e_circum {
@@ -48,7 +45,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp A &kp RETURN>;
             label = "U_E_CIRCUM";
-            wait-ms = <50>;
+            wait-ms = <0>;
         };
 
         u_e_trema: u_e_trema {
@@ -56,7 +53,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp B &kp RETURN>;
             label = "U_E_TREMA";
-            wait-ms = <50>;
         };
 
         u_o_circum: u_o_circum {
@@ -64,7 +60,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp F &kp N4 &kp RETURN>;
             label = "U_O_CIRCUM";
-            wait-ms = <50>;
         };
 
         u_i_circum: u_i_circum {
@@ -72,7 +67,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp E &kp RETURN>;
             label = "U_I_CIRCUM";
-            wait-ms = <50>;
         };
 
         u_i_trema: u_i_trema {
@@ -80,7 +74,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp F &kp RETURN>;
             label = "U_I_TREMA";
-            wait-ms = <50>;
         };
 
         u_a_grave: u_a_grave {
@@ -88,7 +81,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N0 &kp RETURN>;
             label = "U_A_GRAVE";
-            wait-ms = <50>;
         };
 
         u_u_grave: u_u_grave {
@@ -96,7 +88,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp F &kp N9 &kp RETURN>;
             label = "U_U_GRAVE";
-            wait-ms = <50>;
+            wait-ms = <0>;
         };
 
         u_u_circum: u_u_circum {
@@ -104,7 +96,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp F &kp B &kp RETURN>;
             label = "U_U_CIRCUM";
-            wait-ms = <50>;
         };
 
         u_a_circum: u_a_circum {
@@ -112,7 +103,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(RS(U)) &kp E &kp N2 &kp RETURN>;
             label = "U_A_CIRCUM";
-            wait-ms = <50>;
+            wait-ms = <0>;
         };
     };
 
@@ -125,6 +116,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
             display-name = "Base";
             bindings = <
 &trans  &kp SEMICOLON   &kp COMMA           &kp PERIOD      &kp P             &kp Y           &kp F        &kp G              &kp C            &kp R                &kp L            &trans
@@ -145,7 +137,7 @@
         };
 
         Symbols_Alt {
-            display-name = "Symbols Alt.";
+            display-name = "Symb. 2";
             bindings = <
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
 &trans  &trans     &trans         &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
@@ -165,7 +157,7 @@
         };
 
         Bluetooth {
-            display-name = "Bluetooth";
+            display-name = "BT";
             bindings = <
 &trans  &sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bt BT_CLR  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans      &trans
@@ -177,10 +169,10 @@
         Unicode_Linux {
             display-name = "Unicode (L)";
             bindings = <
-&trans  &trans      &trans       &u_e_circum  &trans       &trans         &trans  &trans  &u_cedilla  &trans  &trans  &trans
-&trans  &u_a_grave  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &trans  &trans      &trans  &trans  &trans
-&trans  &u_a_grave  &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans  &trans      &trans  &trans  &trans
-                                 &trans       &trans       &trans         &trans  &trans  &trans
+&trans  &trans       &trans       &u_e_circum  &trans       &trans         &trans  &trans  &u_cedilla  &trans  &trans  &trans
+&trans  &u_a_circum  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &u_a_grave   &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans  &trans      &trans  &trans  &trans
+                                  &trans       &trans       &trans         &trans  &trans  &trans
             >;
         };
     };
