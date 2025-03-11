@@ -19,6 +19,8 @@
 
 &lt { quick-tap-ms = <175>; };
 
+&mmv { acceleration-exponent = <2>; };
+
 / {
     macros {
         u_cedilla: unicode {
@@ -187,10 +189,10 @@
 
         Mouse {
             bindings = <
-&none  &none  &none           &mmv MOVE_UP    &none            &none    &none  &none           &none            &none     &none  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &mkp MB1        &mkp MB2         &mkp MB3  &none  &none
-&none  &none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP     &none    &none  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MB5  &none  &none
-                              &none           &none            &none    &none  &none           &toggle_mouse
+&none  &none  &none           &mmv MOVE_UP    &none            &none     &none   &none           &none            &none     &toggle_mouse  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none   &mkp MB1        &mkp MB2         &mkp MB3  &none          &none
+&none  &none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP     &none     &none   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MB5  &none          &none
+                              &trans          &trans           &trans    &trans  &trans          &trans
             >;
 
             label = "Mouse";
