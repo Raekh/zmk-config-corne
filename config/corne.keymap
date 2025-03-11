@@ -19,7 +19,7 @@
 
 &lt { quick-tap-ms = <175>; };
 
-&mmv { acceleration-exponent = <3>; };
+&mmv { acceleration-exponent = <4>; };
 
 / {
     macros {
