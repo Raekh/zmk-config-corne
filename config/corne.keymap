@@ -107,6 +107,13 @@
             label = "U_A_CIRCUM";
             wait-ms = <0>;
         };
+
+        toggle_mouse: toggle_mouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 6>;
+            label = "TOGGLE_MOUSE";
+        };
     };
 
     keymap {
@@ -154,7 +161,7 @@
 &trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
 &trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
 &trans  &kp END   &kp CAPSLOCK  &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN          &kp INSERT  &kp F12  &trans
-                                &tog 6             &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
+                                &toggle_mouse      &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
             >;
         };
 
@@ -180,11 +187,13 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans          &trans           &trans    &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &mkp MB1        &mkp MB2         &mkp MB3  &trans  &trans
-&trans  &trans  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP     &trans    &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MB5  &trans  &trans
-                                &trans          &trans           &trans    &trans  &lt 3 SPACE     &trans
+&none  &none  &none           &mmv MOVE_UP    &none            &none    &none  &none           &none            &none     &none  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &mkp MB1        &mkp MB2         &mkp MB3  &none  &none
+&none  &none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP     &none    &none  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MB5  &none  &none
+                              &none           &none            &none    &none  &lt 3 SPACE     &none
             >;
+
+            label = "Mouse";
         };
     };
 };
