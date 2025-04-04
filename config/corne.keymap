@@ -160,9 +160,9 @@
         Media {
             display-name = "Media";
             bindings = <
-&trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8            &kp F9      &kp F10  &trans
-&trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans
-&trans  &kp END   &kp CAPSLOCK  &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN          &kp INSERT  &kp F12  &trans
+&trans  &kp F1    &kp F2        &kp F3             &kp F4           &kp F5                  &kp F6     &kp F7      &kp F8    &kp F9      &kp F10  &trans
+&trans  &kp HOME  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC    &kp PG_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp F11  &trans
+&trans  &kp END   &kp CAPSLOCK  &kp LEFT           &kp RIGHT        &kp C_BRIGHTNESS_DEC    &kp PG_DN  &kp UP      &kp DOWN  &kp INSERT  &kp F12  &trans
                                 &toggle_mouse      &lt 4 BACKSPACE  &trans                  &trans     &trans      &trans
             >;
         };
@@ -180,10 +180,10 @@
         Unicode_Linux {
             display-name = "Unicode (L)";
             bindings = <
-&trans  &trans       &trans       &u_e_circum  &trans       &trans         &trans  &trans  &u_cedilla  &trans  &trans  &trans
-&trans  &u_a_circum  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &trans  &trans      &trans  &trans  &trans
-&trans  &u_a_grave   &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans  &trans      &trans  &trans  &trans
-                                  &trans       &trans       &trans         &trans  &trans  &trans
+&trans  &trans       &trans       &u_e_circum  &trans       &trans         &trans  &trans    &u_cedilla  &trans    &trans  &trans
+&trans  &u_a_circum  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &kp C_RW  &trans      &kp C_FF  &trans  &trans
+&trans  &u_a_grave   &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans    &trans      &trans    &trans  &trans
+                                  &trans       &trans       &trans         &trans  &trans    &trans
             >;
         };
 
