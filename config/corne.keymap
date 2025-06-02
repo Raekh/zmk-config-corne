@@ -12,12 +12,12 @@
 
 &mt {
     tapping-term-ms = <165>;
-    require-prior-idle-ms = <125>;
-    quick-tap-ms = <125>;
+    require-prior-idle-ms = <120>;
+    quick-tap-ms = <120>;
     flavor = "tap-preferred";
 };
 
-&lt { quick-tap-ms = <175>; };
+&lt { quick-tap-ms = <150>; };
 
 &mmv { acceleration-exponent = <4>; };
 
@@ -170,7 +170,7 @@
         Bluetooth {
             display-name = "BT";
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &out OUT_USB  &trans  &trans  &trans  &bt BT_CLR  &trans
+&trans  &trans        &out OUT_BLE  &out OUT_TOG  &out OUT_USB  &trans          &out OUT_USB  &trans  &trans  &trans  &bt BT_CLR  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &out OUT_TOG  &trans  &trans  &trans  &trans      &trans
 &trans  &trans        &sys_reset    &bt BT_PRV    &bt BT_NXT    &trans          &out OUT_BLE  &trans  &trans  &trans  &trans      &trans
                                     &trans        &trans        &trans          &trans        &trans  &trans
