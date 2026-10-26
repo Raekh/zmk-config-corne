@@ -181,10 +181,10 @@
         Unicode_Linux {
             display-name = "Unicode (L)";
             bindings = <
-&trans  &trans       &trans       &u_e_circum  &trans       &trans         &trans  &trans    &u_cedilla  &trans    &trans  &trans
-&trans  &u_a_circum  &u_o_circum  &u_e_acute   &u_u_circum  &u_i_circum    &trans  &kp C_RW  &trans      &kp C_FF  &trans  &trans
-&trans  &u_a_grave   &u_e_trema   &u_e_grave   &u_u_grave   &u_i_trema     &trans  &trans    &trans      &trans    &trans  &trans
-                                  &trans       &trans       &trans         &trans  &trans    &trans
+&trans  &trans       &trans       &u_e_circum  &kp EN_E_ACUTE  &trans         &trans  &trans    &u_cedilla  &trans    &trans  &trans
+&trans  &u_a_circum  &u_o_circum  &u_e_acute   &u_u_circum     &u_i_circum    &trans  &kp C_RW  &trans      &kp C_FF  &trans  &trans
+&trans  &u_a_grave   &u_e_trema   &u_e_grave   &u_u_grave      &u_i_trema     &trans  &trans    &trans      &trans    &trans  &trans
+                                  &trans       &trans          &trans         &trans  &trans    &trans
             >;
         };
 
